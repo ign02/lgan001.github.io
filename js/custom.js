@@ -61,7 +61,7 @@ $(function() {
                 '         <h4>企業資訊</h4>' +
                 '         <a href="help.html">聯絡我們</a>' +
                 '         <a href="help.html">演員應徵</a>' +
-                '         <a href="index.html#news">最新消息</a>' +
+                '         <a href="index.html?srcto=news">最新消息</a>' +
                 '     </div>' +
                 ' </div>' )
 
