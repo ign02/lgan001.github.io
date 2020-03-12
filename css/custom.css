@@ -26,6 +26,10 @@ a:hover {
     color: #666;
 }
 
+.Release .card-text {
+    display: block;
+}
+
 .container-fluid {
     width: 100%;
     padding-right: 0px;
@@ -99,7 +103,7 @@ h1 {
 }
 
 .btn-outline-primary:hover {
-    color: #fff;
+    color: #fff !important;
     background-color: #f4a9b9;
     border-color: #f4a9b9;
 }
@@ -166,7 +170,7 @@ h1 {
     }
 
     .Release .card {
-        width: 30.6%;
+        width: 30%;
         display: inline-block;
         margin-bottom: 1.5rem;
         margin-left: 0.5rem;
@@ -182,6 +186,7 @@ h1 {
 .works-data-img {
     width: 200px;
     margin-top: -70px;
+    box-shadow: 1px 2px 10px grey;
 }
 
 #owl-works .item {
@@ -448,7 +453,7 @@ dr {
 
 dd {
     display: inline-block;
-    width: 70%;
+    width: 60%;
 }
 
 dt {
@@ -480,4 +485,89 @@ dt {
 #grils-slider .card-img-overlay:hover {
     opacity: 1;
     transition: all 0.5s ease-in-out;
+}
+
+.actor .bodydata {
+    color: #f4a9b9;
+}
+
+.actor .cup {
+    font-size: 3rem;
+
+}
+
+.actor .bwh {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-right: 0.5rem;
+}
+
+.actor .bwh div {
+    width: 30px;
+    border-right: 1px solid #f4a9b9;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.actor .odata {
+    padding-top: 1rem;
+    color: #222;
+    font-size: 1rem;
+}
+
+.actor .odata .title:before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 7px 4px 7px 0;
+    vertical-align: bottom;
+    background-color: #f4a9b9;
+}
+
+.actor .odata .mesg {
+    padding-left: 18px;
+    padding-bottom: 10px;
+}
+
+.text-pink {
+    color: #f4a9b9 !important;
+}
+
+.acworks img {
+    padding-bottom: 1rem;
+}
+
+.actors .actorname {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    width: calc(100% - 30px);
+    bottom: 0;
+}
+
+.scroll-pager {
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    right: 20px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.scroll-pager a.active {
+    background: #f4a9b9;
+}
+
+.scroll-pager a {
+    display: block;
+    width: 6px;
+    height: 90px;
+    border: 1px solid #f4a9b9;
+}
+
+.scroll-pager li {
+    margin: 8px 0;
+    list-style-type: none;
 }

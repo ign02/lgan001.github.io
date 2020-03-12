@@ -10,19 +10,19 @@ $(function() {
                 '                <a class="nav-link" href="Release.html">發售作品</a>' +
                 '            </li>' +
                 '            <li class="nav-item">' +
-                '                <a class="nav-link" href="#">女優排行</a>' +
+                '                <a class="nav-link" href="actors.html">女優一覽</a>' +
                 '            </li>' +
                 '            <li class="nav-item">' +
-                '                <a class="nav-link" href="index.html#productarea">周邊商品</a>' +
+                '                <a class="nav-link" href="index.html?srcto=productarea">周邊商品</a>' +
                 '            </li>' +
                 '            <li class="nav-item">' +
-                '                <a class="nav-link" href="index.html#vendorarea">合作廠商</a>' +
+                '                <a class="nav-link" href="index.html?srcto=vendorarea">合作廠商</a>' +
                 '            </li>' +
                 '            <li class="nav-item">' +
                 '                <a class="nav-link" href="help.html">聯繫我們</a>' +
                 '            </li>' +
                 '            <li class="nav-item">' +
-                '                <a class="nav-link" href="index.html#news">最新消息</a>' +
+                '                <a class="nav-link" href="index.html?srcto=news">最新消息</a>' +
                 '            </li>' +
                 '            <li class="nav-item">' +
                 '                <a class="nav-link" id="btn_Search"><img src="img/svg/magnifying-glass.svg" class="magnifying-glass"></a>' +
@@ -43,11 +43,11 @@ $(function() {
                 '     </div>' +
                 '     <div class="col-md-3 pt-5">' +
                 '         <h4>熱門女優</h4>' +
-                '         <a href="#">女優1</a>' +
-                '         <a href="#">女優2</a>' +
-                '         <a href="#">女優3</a>' +
-                '         <a href="#">女優4</a>' +
-                '         <a href="#">女優5</a>' +
+                '         <a href="actor.html">女優1</a>' +
+                '         <a href="actor.html">女優2</a>' +
+                '         <a href="actor.html">女優3</a>' +
+                '         <a href="actor.html">女優4</a>' +
+                '         <a href="actor.html">女優5</a>' +
                 '     </div>' +
                 '     <div class="col-md-3 pt-5">' +
                 '         <h4>商品資訊</h4>' +
