@@ -354,6 +354,13 @@ footer .logo {
     box-shadow: none;
 }
 
+.vendor .main-content .owl-theme .custom-nav {
+    position: absolute;
+    top: -10rem;
+    left: 0;
+    right: 0;
+}
+
 .main-content .owl-theme .custom-nav {
     position: relative;
     top: -10rem;
