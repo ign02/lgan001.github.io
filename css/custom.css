@@ -344,19 +344,19 @@ footer .logo {
 }
 
 
-.vendor .main-content {
+.main-content {
     position: relative;
 }
 
-.vendor .main-content button:focus,
-.vendor .main-content button:active {
+.main-content button:focus,
+.main-content button:active {
     outline: none !important;
     box-shadow: none;
 }
 
-.vendor .main-content .owl-theme .custom-nav {
-    position: absolute;
-    top: 0.5rem;
+.main-content .owl-theme .custom-nav {
+    position: relative;
+    top: -10rem;
     left: 0;
     right: 0;
 }
@@ -377,12 +377,27 @@ footer .logo {
     color: #cecece;
 }
 
+.works .main-content .owl-theme .custom-nav .owl-prev,
+.works .main-content .owl-theme .custom-nav .owl-next {
+    position: absolute;
+    height: 1px;
+    color: inherit;
+    background: none;
+    border: none;
+    z-index: 100;
+}
 
-.vendor .main-content .owl-theme .custom-nav .owl-prev {
+.works .main-content .owl-theme .custom-nav .owl-prev,
+.works .main-content .owl-theme .custom-nav .owl-next {
+    font-size: 2.5rem;
+    color: #cecece;
+}
+
+.main-content .owl-theme .custom-nav .owl-prev {
     left: 0;
 }
 
-.vendor .main-content .owl-theme .custom-nav .owl-next {
+.main-content .owl-theme .custom-nav .owl-next {
     right: 0;
 }
 

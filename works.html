@@ -10,12 +10,16 @@
     <script src="js/jquery.scrollify.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/photoswipe.js"></script>
+    <script src="js/photoswipe-ui-default.min.js"></script>
     <script src="js/custom.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/owl.carousel.min.css" rel="stylesheet">
     <link href="css/owl.theme.default.min.css" rel="stylesheet">
     <link href="css/open-iconic.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/photoswipe.css">
+    <link rel="stylesheet" href="css/default-skin/default-skin.css">
     <style>
     </style>
 </head>
@@ -46,16 +50,23 @@
             </div>
         </div>
         <div class="bg-dark scrollify">
-            <div class="col-12">
-                <div id="owl-works" class="owl-carousel owl-theme">
-                    <div class="item"><img src="img/works-slider1.jpg" alt="Owl Image"></div>
-                    <div class="item"><img src="img/works-slider1.jpg" alt="Owl Image"></div>
-                    <div class="item"><img src="img/works-slider1.jpg" alt="Owl Image"></div>
-                    <div class="item"><img src="img/works-slider1.jpg" alt="Owl Image"></div>
-                    <div class="item"><img src="img/works-slider1.jpg" alt="Owl Image"></div>
-                    <div class="item"><img src="img/works-slider1.jpg" alt="Owl Image"></div>
-                    <div class="item"><img src="img/works-slider1.jpg" alt="Owl Image"></div>
-                    <div class="item"><img src="img/works-slider1.jpg" alt="Owl Image"></div>
+            <div class="col-12 works">
+                <div class="main-content">
+                    <div id="owl-works" class="owl-carousel owl-theme my-gallery">
+                        <figure class="d-inline"><a href="img/works-slider1.jpg" class="item" data-size="0x0"><img src="img/works-slider1.jpg"></a></figure>
+                        <figure class="d-inline"><a href="img/works-slider1.jpg" class="item" data-size="0x0"><img src="img/works-slider1.jpg"></a></figure>
+                        <figure class="d-inline"><a href="img/works-slider1.jpg" class="item" data-size="0x0"><img src="img/works-slider1.jpg"></a></figure>
+                        <figure class="d-inline"><a href="img/works-slider1.jpg" class="item" data-size="0x0"><img src="img/works-slider1.jpg"></a></figure>
+                        <figure class="d-inline"><a href="img/works-slider1.jpg" class="item" data-size="0x0"><img src="img/works-slider1.jpg"></a></figure>
+                        <figure class="d-inline"><a href="img/works-slider1.jpg" class="item" data-size="0x0"><img src="img/works-slider1.jpg"></a></figure>
+                        <figure class="d-inline"><a href="img/works-slider1.jpg" class="item" data-size="0x0"><img src="img/works-slider1.jpg"></a></figure>
+                        <figure class="d-inline"><a href="img/works-slider1.jpg" class="item" data-size="0x0"><img src="img/works-slider1.jpg"></a></figure>
+                    </div>
+                    <div class="owl-theme">
+                        <div class="owl-controls">
+                            <div class="custom-nav owl-nav"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -141,6 +152,7 @@
 </body>
 <script>
 function init() {
+    var script = document.createElement('script');
     if ($(document).width() >= 768) {
         $.scrollify({
             section: ".scrollify",
@@ -158,12 +170,21 @@ function init() {
             autoplayTimeout: 3000,
             autoplayHoverPause: true,
             dots: false,
+            nav: true,
+            navText: [
+                '<span class="oi" data-glyph="chevron-left"></span>',
+                '<span class="oi" data-glyph="chevron-right"></span>'
+            ],
+            navContainer: '.main-content .custom-nav'
 
         });
+        script.src = 'js/initPSPC.js';
     }
     if ($(document).width() < 768) {
         $("#owl-works").show();
+        script.src = 'js/initPS.js';
     }
+    document.head.appendChild(script);
 }
 $(window).resize(function() {
     init();
@@ -176,6 +197,7 @@ $(function() {
             scrollTop: $(".scrollify").eq(1).offset().top
         }, 500);
     });
+
 });
 </script>
 
