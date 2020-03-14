@@ -13,7 +13,7 @@ $(function() {
         '                <a class="nav-link" href="actors.html">女優一覽</a>' +
         '            </li>' +
         '            <li class="nav-item">' +
-        '                <a class="nav-link" href="index.html?srcto=productarea">周邊商品</a>' +
+        '                <a class="nav-link" href="products.html">周邊商品</a>' +
         '            </li>' +
         '            <li class="nav-item">' +
         '                <a class="nav-link" href="index.html?srcto=vendorarea">合作廠商</a>' +
